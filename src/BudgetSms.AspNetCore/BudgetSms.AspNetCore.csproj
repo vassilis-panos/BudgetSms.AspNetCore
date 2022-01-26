@@ -1,0 +1,41 @@
+<Project Sdk="Microsoft.NET.Sdk">
+	<PropertyGroup>
+		<Version>1.0.0</Version>
+		<TargetFrameworks>net5.0;net6.0</TargetFrameworks>
+		<Description>ASP.NET Core library for BudgetSMS.net</Description>
+		<Authors>Vassilis Panos</Authors>
+		<Copyright>Copyright © 2022 Vassilis Panos</Copyright>
+		<GeneratePackageOnBuild>false</GeneratePackageOnBuild>
+		<PackageTags>BudgetSMS;SMS</PackageTags>
+		<RepositoryUrl>https://github.com/vassilis-panos/BudgetSms.AspNetCore</RepositoryUrl>
+		<PackageProjectUrl>https://github.com/vassilis-panos/BudgetSms.AspNetCore</PackageProjectUrl>
+		<PackageLicenseFile>LICENSE.md</PackageLicenseFile>
+		<PackageId>BudgetSms.AspNetCore</PackageId>
+		<AssemblyName>BudgetSms.AspNetCore</AssemblyName>
+		<RootNamespace>BudgetSms.AspNetCore</RootNamespace>
+		<Product>BudgetSms.AspNetCore</Product>
+		<Company />
+		<LangVersion>latest</LangVersion>
+		<Nullable>enable</Nullable>
+		<PackageReadmeFile>README.md</PackageReadmeFile>
+	</PropertyGroup>
+
+
+	<ItemGroup>
+		<None Include="..\..\LICENSE.md">
+			<Pack>True</Pack>
+			<PackagePath></PackagePath>
+		</None>
+		<None Include="..\..\README.md">
+			<Pack>True</Pack>
+			<PackagePath>\</PackagePath>
+		</None>
+	</ItemGroup>
+
+	<ItemGroup>
+		<PackageReference Include="Microsoft.AspNetCore.WebUtilities" Version="2.2.0" />
+		<PackageReference Include="Microsoft.Extensions.DependencyInjection.Abstractions" Version="6.0.0" />
+		<PackageReference Include="Microsoft.Extensions.Http" Version="6.0.0" />
+		<PackageReference Include="Microsoft.Extensions.Options" Version="6.0.0" />
+	</ItemGroup>
+</Project>
